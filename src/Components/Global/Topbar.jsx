@@ -18,7 +18,11 @@ export default function Topbar() {
   const menuItems = ["Test", "Test", "Test"];
 
   return (
-    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className=" bg-transparent"
+    >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -26,7 +30,7 @@ export default function Topbar() {
       </NavbarContent>
 
       <NavbarBrand justify="start">
-        <img src={Logo} alt="logo" className=" md:w-1/3" />
+        <img src={Logo} alt="logo" className=" sm:w-1/2 md:w-1/3" />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>
@@ -51,10 +55,16 @@ export default function Topbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent
-        className="sm:flex justify-end"
-        justify="end"
-      ></NavbarContent>
+      <NavbarContent className="sm:flex justify-end" justify="end">
+        <NavbarItem className="hidden md:block">
+          <Link color="foreground" href="/azienda">
+            Login
+          </Link>
+        </NavbarItem>
+        <NavbarItem className="hidden md:block">
+          <Button color="primary">Sign Up</Button>
+        </NavbarItem>
+      </NavbarContent>
 
       <NavbarMenu>
         {menuItems.map((item, index) => (

@@ -8,7 +8,7 @@ export default function FAQ() {
         <h2 class="mb-8 text-4xl font-bold text-gray-900 dark:text-white">
           Frequently asked questions
         </h2>
-        <Accordion variant="shadow">
+        <Accordion variant="light">
           <AccordionItem key="1" aria-label="FAQ 1" title="FAQ 1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
