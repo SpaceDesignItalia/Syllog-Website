@@ -25,7 +25,7 @@ export default function Hero() {
             radius="sm"
             className="w-full md:w-1/5"
           >
-            Sign in
+            Sign up
           </Button>
         </div>
         <div class="w-full md:w-1/2">
