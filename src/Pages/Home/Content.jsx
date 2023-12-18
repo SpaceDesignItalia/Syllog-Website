@@ -1,9 +1,13 @@
+//Utils
 import React from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Content() {
+  //Registra la posizione del
+  //componente rispetto allo schermo
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     rootMargin: "-50% 0px",
@@ -19,6 +23,7 @@ export default function Content() {
     rootMargin: "-50% 0px",
   });
 
+  //Props animazione
   const variants = {
     hidden: { opacity: 0, y: 150 },
     visible: { opacity: 1, y: 0 },

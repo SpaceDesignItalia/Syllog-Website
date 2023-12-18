@@ -1,14 +1,17 @@
+//Utils
 import React from "react";
 import { Button } from "@nextui-org/react";
-import HeroImg from "../../assets/Home/Hero.png";
 import { motion } from "framer-motion";
+
+//Assetts
+import HeroImg from "../../assets/Home/Hero.png";
 
 export default function Hero() {
   return (
-    <motion.section className="flex flex-col gap-20 justify-center items-center max-w-screen-2xl px-4 py-8 mx-auto lg:py-16 h-screen">
+    <motion.section className="flex flex-col gap-20 md:justify-center items-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 h-screen">
       <div>
         <motion.h1
-          className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-center"
+          className="max-w-2xl mb-4 text-5xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-center"
           initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5, type: "spring", bounce: 0.25 }}
@@ -19,7 +22,7 @@ export default function Hero() {
       <div className="flex flex-col-reverse md:flex-row gap-5">
         <div className="flex flex-col justify-center w-full md:w-1/2">
           <motion.h1
-            className="text-center md:text-left max-w-2xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            className="text-center md:text-left max-w-2xl mb-4 text-2xl tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
             initial={{ y: 150, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
