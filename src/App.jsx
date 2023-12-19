@@ -18,6 +18,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="*" element={<Error404 />} />
       </Routes>
+      <Footer />
     </>
   );
 }
