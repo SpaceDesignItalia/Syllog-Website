@@ -8,7 +8,7 @@ import HeroImg from "../../assets/Home/Hero.png";
 
 export default function Hero() {
   return (
-    <motion.section className="flex flex-col gap-20 md:justify-center items-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 h-screen">
+    <motion.section className="flex flex-col gap-20 md:justify-center items-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 h-auto md:h-screen">
       <div>
         <motion.h1
           className="max-w-2xl mb-4 text-5xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-center"

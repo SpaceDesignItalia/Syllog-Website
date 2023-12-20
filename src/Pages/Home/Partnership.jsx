@@ -1,16 +1,53 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Partnership() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-30% 0px",
+  });
+
+  const variants = {
+    hidden: { opacity: 0, y: 150 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const variantsItems = {
+    hidden: { opacity: 0, x: -150 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <section class="dark:bg-gray-900">
-      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 class="mb-8 lg:mb-16 text-3xl font-bold leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+    <section ref={ref}>
+      <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <motion.h2
+          className="mb-8 lg:mb-16 text-3xl font-bold leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
+          transition={{
+            duration: 1.5,
+            type: "spring",
+            bounce: 0.25,
+          }}
+        >
           Partners
-        </h2>
-        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-          <a href="#" class="flex justify-center items-center">
+        </motion.h2>
+        <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+            }}
+          >
             <svg
-              class="h-9 hover:text-gray-900 dark:hover:text-white"
+              className="h-9 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 125 35"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +59,21 @@ export default function Partnership() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" class="flex justify-center items-center">
+          </motion.a>
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.25,
+            }}
+          >
             <svg
-              class="h-9 hover:text-gray-900 dark:hover:text-white"
+              className="h-9 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 86 29"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +85,21 @@ export default function Partnership() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" class="flex justify-center items-center">
+          </motion.a>
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.35,
+            }}
+          >
             <svg
-              class="h-8 hover:text-gray-900 dark:hover:text-white"
+              className="h-8 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 151 34"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -62,11 +121,22 @@ export default function Partnership() {
                 </clipPath>
               </defs>
             </svg>
-          </a>
+          </motion.a>
 
-          <a href="#" class="flex justify-center items-center">
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.45,
+            }}
+          >
             <svg
-              class="h-9 hover:text-gray-900 dark:hover:text-white"
+              className="h-9 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 124 38"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +146,21 @@ export default function Partnership() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" class="flex justify-center items-center">
+          </motion.a>
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.55,
+            }}
+          >
             <svg
-              class="h-9 hover:text-gray-900 dark:hover:text-white"
+              className="h-9 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 137 37"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -157,10 +238,21 @@ export default function Partnership() {
                 fill="currentColor"
               />
             </svg>
-          </a>
-          <a href="#" class="flex justify-center items-center">
+          </motion.a>
+          <motion.a
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variantsItems}
+            transition={{
+              duration: 1.5,
+              type: "spring",
+              bounce: 0.25,
+              delay: 0.65,
+            }}
+          >
             <svg
-              class="h-6 hover:text-gray-900 dark:hover:text-white"
+              className="h-6 hover:text-gray-900 dark:hover:text-white"
               viewBox="0 0 124 21"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +306,7 @@ export default function Partnership() {
                 fill="currentColor"
               />
             </svg>
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
