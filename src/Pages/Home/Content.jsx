@@ -69,6 +69,21 @@ export default function Content() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </motion.p>
+            <motion.div
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={variants}
+              transition={{
+                duration: 1.5,
+                type: "spring",
+                bounce: 0.25,
+                delay: 0.75,
+              }}
+            >
+              <Button color="primary" size="lg" radius="sm">
+                Contattaci
+              </Button>
+            </motion.div>
           </div>
           <div className="mt-8 md:w-1/2">
             <motion.img
@@ -200,6 +215,22 @@ export default function Content() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </motion.p>
+
+            <motion.div
+              initial="hidden"
+              animate={inView3 ? "visible" : "hidden"}
+              variants={variants}
+              transition={{
+                duration: 1.5,
+                type: "spring",
+                bounce: 0.25,
+                delay: 0.75,
+              }}
+            >
+              <Button color="primary" size="lg" radius="sm">
+                Contattaci
+              </Button>
+            </motion.div>
           </div>
           <div className="mt-8 md:w-1/2">
             <motion.img
