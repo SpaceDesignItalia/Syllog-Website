@@ -22,6 +22,7 @@ export default function Topbar() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       className=" bg-transparent"
+      maxWidth="xl"
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle
@@ -30,7 +31,7 @@ export default function Topbar() {
       </NavbarContent>
 
       <NavbarBrand justify="start">
-        <img src={Logo} alt="logo" className=" sm:w-1/2 md:w-1/3" />
+        <img src={Logo} alt="logo" className=" sm:w-1/2 md:w-1/4" />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>
