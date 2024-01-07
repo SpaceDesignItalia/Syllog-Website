@@ -64,7 +64,7 @@ export default function Topbar() {
         </NavbarItem>
         <NavbarItem className="hidden md:block">
           <Button color="primary" radius="sm">
-            Sign Up
+            Contact Us!
           </Button>
         </NavbarItem>
       </NavbarContent>
