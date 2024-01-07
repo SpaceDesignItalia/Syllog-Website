@@ -37,23 +37,21 @@ export default function FAQ() {
           Frequently asked questions
         </h2>
         <Accordion variant="light">
-          <AccordionItem key="1" aria-label="FAQ 1" title="FAQ 1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <AccordionItem key="1" aria-label="FAQ 1" title={<span className=" text-2xl">How does Syllog platform works?</span>}>
+          Our platform simplifies the process: upload a variety of scattered data—be it audio, videos, or documents. Based on your specifications and preferences, the system crafts your desired learning program. In just a few clicks, you'll receive an AI-generated draft of your training program in your preferred format. From there, you have the flexibility to edit, expand, and refine. Once satisfied, either export it for external use or directly publish it within the platform.
           </AccordionItem>
-          <AccordionItem key="2" aria-label="FAQ 2" title="FAQ 2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <AccordionItem key="2" aria-label="FAQ 2" title={<span className=" text-2xl">Who is Syllog platform for?</span>}>
+          Our platform caters to:
+          <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
+              <li>Companies experiencing rapid change, enabling them to expedite employee training and maximize productivity.</li>
+              <li>Business partners seeking an effortless way to craft and share learning content, enhancing customer training on products and services.</li>
+              <li>Educational institutions and schools looking to simplify the creation of teaching materials.</li>
+          </ul>
           </AccordionItem>
-          <AccordionItem key="3" aria-label="FAQ 3" title="FAQ 3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <AccordionItem key="3" aria-label="FAQ 3" title={<span className=" text-2xl">Why should I use Syllog?</span>}>
+            Syllog addresses the primary challenges professionals face with traditional software solutions like Learning Management Systems. Leveraging AI, you won't begin from scratch; instead, your learning content is automatically generated based on the data you've uploaded, all with just a few clicks.          </AccordionItem>
+          <AccordionItem key="4" aria-label="FAQ 4" title={<span className=" text-2xl">How to get started with Syllog?</span>}>
+            Reach out at <span className="font-bold">info@syllog.it</span> to try our solutions firsthand! Let's arrange a brief, friendly call to get to know each other better.
           </AccordionItem>
         </Accordion>
       </div>

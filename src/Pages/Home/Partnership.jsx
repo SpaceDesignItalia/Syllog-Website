@@ -22,7 +22,7 @@ export default function Partnership() {
     <section ref={ref}>
       <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <motion.h2
-          className="mb-8 lg:mb-16 text-3xl font-bold leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+          className="mb-1 text-4xl font-bold leading-tight md:text-4xl xl:text-5xl dark:text-white text-center"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
@@ -32,9 +32,9 @@ export default function Partnership() {
             bounce: 0.25,
           }}
         >
-          Partners
+          Discover what Syllog can do for you!
         </motion.h2>
-        <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+        {/* <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
           <motion.a
             className="flex justify-center items-center"
             initial="hidden"
@@ -307,7 +307,7 @@ export default function Partnership() {
               />
             </svg>
           </motion.a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
