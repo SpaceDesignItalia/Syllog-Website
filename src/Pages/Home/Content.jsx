@@ -9,7 +9,7 @@ import Onboard from "../../assets/Onboard.svg";
 import Offboarding from "../../assets/Offboarding.svg";
 import Success from "../../assets/Success.svg";
 
-export default function Content() {
+export default function Content({ scrollToContact }) {
   //Registra la posizione del
   //componente rispetto allo schermo
 
@@ -56,7 +56,7 @@ export default function Content() {
                 delay: 0.25,
               }}
             >
-              <span style={{ color: '#0098CB' }}>Effortless</span> Onboarding
+              <span style={{ color: "#0098CB" }}>Effortless</span> Onboarding
             </motion.h2>
             <motion.p
               className="md:text-lg mb-4"
@@ -70,7 +70,10 @@ export default function Content() {
                 delay: 0.5,
               }}
             >
-              Save time in creating onboarding programs and let your new employees reach their full potential faster. Replace hard-to-use tools with our automated solutions and get rid of the boring activities to focus on what you care most: your people.
+              Save time in creating onboarding programs and let your new
+              employees reach their full potential faster. Replace hard-to-use
+              tools with our automated solutions and get rid of the boring
+              activities to focus on what you care most: your people.
             </motion.p>
             <motion.div
               initial="hidden"
@@ -83,7 +86,12 @@ export default function Content() {
                 delay: 0.75,
               }}
             >
-              <Button color="primary" size="lg" radius="sm">
+              <Button
+                color="primary"
+                size="lg"
+                radius="sm"
+                onClick={scrollToContact}
+              >
                 Contact Us!
               </Button>
             </motion.div>
@@ -122,7 +130,8 @@ export default function Content() {
                 delay: 0.25,
               }}
             >
-              <span style={{ color: '#0098CB' }}>Continous</span> Growth, Simplified
+              <span style={{ color: "#0098CB" }}>Continous</span> Growth,
+              Simplified
             </motion.h2>
             <motion.p
               className="md:text-lg mb-4"
@@ -136,7 +145,9 @@ export default function Content() {
                 delay: 0.5,
               }}
             >
-              Learning should be a never ending journey. Create training programs and growth plans in seconds to let your people grow along with your company. Achieve more, faster.
+              Learning should be a never ending journey. Create training
+              programs and growth plans in seconds to let your people grow along
+              with your company. Achieve more, faster.
             </motion.p>
             <motion.div
               initial="hidden"
@@ -149,7 +160,12 @@ export default function Content() {
                 delay: 0.75,
               }}
             >
-              <Button color="primary" size="lg" radius="sm">
+              <Button
+                color="primary"
+                size="lg"
+                radius="sm"
+                onClick={scrollToContact}
+              >
                 Contact Us!
               </Button>
             </motion.div>
@@ -157,7 +173,7 @@ export default function Content() {
           <div className="mt-8 md:w-1/2">
             <motion.img
               className="mt-4 w-full lg:mt-10 rounded-lg"
-              style={{ width: '100%', height: 'auto' }}
+              style={{ width: "100%", height: "auto" }}
               initial="hidden"
               animate={inView2 ? "visible" : "hidden"}
               variants={variants}
@@ -189,7 +205,8 @@ export default function Content() {
                 delay: 0.25,
               }}
             >
-              <span style={{ color: '#0098CB' }}>Smooth</span> Offboarding, Preserved Knowledge
+              <span style={{ color: "#0098CB" }}>Smooth</span> Offboarding,
+              Preserved Knowledge
             </motion.h2>
             <motion.p
               className="md:text-lg mb-4"
@@ -203,7 +220,10 @@ export default function Content() {
                 delay: 0.5,
               }}
             >
-When team members depart, safeguard their invaluable insights. Seamlessly capture and convert departing knowledge into accessible learning content. Transition without the pain, retain the gain.            </motion.p>
+              When team members depart, safeguard their invaluable insights.
+              Seamlessly capture and convert departing knowledge into accessible
+              learning content. Transition without the pain, retain the gain.{" "}
+            </motion.p>
 
             <motion.div
               initial="hidden"
@@ -216,7 +236,12 @@ When team members depart, safeguard their invaluable insights. Seamlessly captur
                 delay: 0.75,
               }}
             >
-              <Button color="primary" size="lg" radius="sm">
+              <Button
+                color="primary"
+                size="lg"
+                radius="sm"
+                onClick={scrollToContact}
+              >
                 Contact Us!
               </Button>
             </motion.div>
@@ -255,7 +280,7 @@ When team members depart, safeguard their invaluable insights. Seamlessly captur
                 delay: 0.25,
               }}
             >
-              <span style={{ color: '#0098CB' }}>Empower</span> Client Success
+              <span style={{ color: "#0098CB" }}>Empower</span> Client Success
             </motion.h2>
             <motion.p
               className="md:text-lg mb-4"
@@ -269,7 +294,9 @@ When team members depart, safeguard their invaluable insights. Seamlessly captur
                 delay: 0.5,
               }}
             >
-              Revolutionize the client onboarding experience by effortlessly strategizing their learning journey through our AI-centric platform. Elevate client success from day one.
+              Revolutionize the client onboarding experience by effortlessly
+              strategizing their learning journey through our AI-centric
+              platform. Elevate client success from day one.
             </motion.p>
             <motion.div
               initial="hidden"
